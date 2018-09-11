@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单</title>
+</head>
+<body>
+	<h3>用户注册</h3>
+	<form action="http://www.baidu.com" method="post">					<!---method默认为get,如果不想敏感信息显示在地址栏里，可以改成 post方式提交 --->
+		<div>															<!--- 单行文本框 --->
+			<label for="username">用户名：</label>						<!--- for属性可以激活label输入 --->
+			<input type="text" name="username" id="username">
+		</div>
+		<div>
+			<br>
+		</div>
+		<div>
+			<label>密码：</label>
+			<input type="password" name="pwd">
+		</div>
+		<div>
+			<br>
+		</div>
+		<dir>
+			<label>性别：</label>						
+			<input type="radio" name="gender"> 男		<!--- 单选框 --->
+			<input type="radio" name="gender"> 女
+		</dir>
+		<div>
+			<br>
+		</div>
+		<div>											
+			<label>爱好：</label>
+			<input type="checkbox" name="like"> 游戏		<!--- 多选框 --->
+			<input type="checkbox" name="like"> 逛街
+			<input type="checkbox" name="like"> 睡觉
+		</div>
+		<div>
+			<br>
+		</div>
+		<div>											
+			<label>籍贯：</label>
+			<select>									<!---  下拉菜单 --->
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+				<option>深圳</option>
+			</select>
+		</div>
+		<div>
+			<br>
+		</div>
+		<div>											
+			<label>照片：</label>
+			<input type="file" name="">					<!--- 上传文件 --->
+		</div>
+		<div>
+			<br>
+		</div>
+		<div>											
+			<label>个人描述：</label>
+			<textarea></textarea>						<!--- 多行文本 --->
+		</div>
+		<div>
+			<br>
+		</div>
+		<div>											
+			<input type="submit" name="" value="提交">	<!---提交按钮 --->
+			<input type="reset" name="" value="重置">	<!---重置按钮 --->
+			<input type="button" name="" value="按钮">	<!--- 按钮--->
+			<input type="hidden" name="" value="10000">	<!---存储页面上的一些数值 --->
+		</div>
+	</form>
+</body>
+</html>
